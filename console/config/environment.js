@@ -25,7 +25,7 @@ module.exports = function (environment) {
         },
 
         API: {
-            host: fixApiHost(getenv('API_HOST'), toBoolean(getenv('API_SECURE'))),
+            host: fixApiHost('http://192.168.1.148', toBoolean(getenv('API_SECURE'))),
             namespace: getenv('API_NAMESPACE', 'int/v1'),
         },
 
