@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'ses'),
+    'default' => 'smtp',
 
     /*
     |--------------------------------------------------------------------------
@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'host' => 'smtp.mailgun.org',
+            'port' => 465,
+            'encryption' => 'tls',
+            'username' => 'developer@alpastechnology.com',
+            'password' => 'qlxv ybzg qohl epjh',
             'timeout' => null,
             'auth_mode' => null,
         ],
